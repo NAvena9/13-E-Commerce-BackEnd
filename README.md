@@ -17,12 +17,11 @@ The scope covers the architecture and be able to interact with the Back-End syst
 
 ## Installation  
 
-1- Clone the repo  
-2- Use the package manager "npm" to install all the node modules that are on the package.json.  
-`npm install`
-3- Create the DB
-4- Run `npm run seed` to seed the database
-5- Run `npm start` to start the app
+1. Clone the repo  
+2. Use the package manager "npm" to install all the node modules that are on the package.json, run `npm install`
+3. Create the DB
+4. Run `npm run seed` to seed the database
+5. Run `npm start` to start the app
 
 
 ## User Story
