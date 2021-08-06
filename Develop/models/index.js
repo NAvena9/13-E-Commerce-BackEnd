@@ -1,22 +1,22 @@
-// import models
 const Product = require('./Product');
 const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
-// Products belongsTo Category
-Product.belongsTo(Category);
+//ASSOCIATIONS
 
-// Categories have many Products
+//Products belongs to Category
+Product.belongsTo(Category);
+//Categoriy has many Products
 Category.hasMany(Product);
 
-// Products belongToMany Tags (through ProductTag)
+//Product belongs to many tags (through product tag)
 Product.belongsToMany(Tag, {
   through: ProductTag
 });
 ProductTag.belongsTo(Tag);
 
-// Tags belongToMany Products (through ProductTag)
+//Tag belongs to many Products (through product tag)
 Tag.belongsToMany(Product, {
   through: ProductTag
 });
