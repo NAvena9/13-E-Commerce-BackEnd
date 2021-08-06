@@ -102,7 +102,7 @@ router.post('/', (req, res) => {
     });
 });
 
-// update product
+//UPDATE Product
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
@@ -144,8 +144,8 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// DELEETE ONE Product by its `id` value
 router.delete('/:id', (req, res) => {
-  // delete one product by its `id` value
 });
 
 module.exports = router;
