@@ -1,12 +1,11 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
-// The `/api/products` endpoint
+//Configuration of the endopoint  " /api/products "
 
-// get all products
+// GET ALL Products
 router.get('/', (req, res) => {
-  // find all products
-  // be sure to include its associated Category and Tag data
+  // find all products, be sure to include its associated Category and Tag data
   Product.findAll({
     attributes: [
       'id',
@@ -33,10 +32,11 @@ router.get('/', (req, res) => {
   });
 });
 
-// get one product
+
+
+// GET ONE Product
 router.get('/:id', (req, res) => {
-  // find a single product by its `id`
-  // be sure to include its associated Category and Tag data
+  // find a single product by its `id`, be sure to include its associated Category and Tag data
   Product.findOne({
     attributes: [
       'id',
